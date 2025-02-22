@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+      "@router": ["./src/router"],
+      "@router/*": ["./src/router/*"],
+      "@stores": ["./src/store"],
+      "@stores/*": ["./src/store/*"],
+      "@views": ["./src/views"],
+      "@views/*": ["./src/views/*"]
+    },
+    "types": [
+      "vue3-toastify/global"
+    ], 
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules"]
+}
